@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Green and Snow Studio</title>
+<meta name="description" content="A studio of ideas. We build creative software — apps and websites — with human intuition and artificial intelligence.">
+<style>
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+html { scroll-behavior: smooth; }
+
+body {
+  background-image: url('assets/img/gss-bg-pattern.jpg');
+  background-color: #FDFDFD;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  color: #1a1a1a;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  line-height: 1.5;
+  font-size: 15px;
+  -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+main.wrapper {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+/* HEADER */
+header.site {
+  padding: 32px 96px 0;
+}
+
+header.site .top-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 28px;
+}
+
+header.site img.logo {
+  height: 90px;
+  width: auto;
+  display: block;
+}
+
+header.site nav {
+  display: flex;
+  gap: 40px;
+}
+
+header.site nav a {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 13px;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: #1a1a1a;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+header.site nav a:hover {
+  color: #1B6527;
+}
+
+header.site .divider {
+  height: 1px;
+  background: rgba(27, 101, 39, 0.3);
+  max-width: 100%;
+}
+
+/* MAIN — двуколонная композиция */
+.main {
+  width: 100%;
+  padding: 40px 96px;
+  display: grid;
+  grid-template-columns: 1fr 1.4fr;
+  gap: 80px;
+  align-items: start;
+}
+
+.main .left .eyebrow {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 12px;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: #1B6527;
+  margin-bottom: 14px;
+}
+
+.main .left .slogan {
+  font-family: Georgia, serif;
+  font-size: 44px;
+  font-weight: normal;
+  line-height: 1.05;
+  letter-spacing: -0.02em;
+  color: #1a1a1a;
+}
+
+.main .left .slogan .line1 {
+  display: block;
+}
+
+.main .left .slogan .line2 {
+  display: block;
+  margin-top: 0.1em;
+}
+
+.main .left .slogan .green {
+  color: #1B6527;
+}
+
+.main .left .slogan .snow {
+  color: #8A99A3;
+  font-style: italic;
+}
+
+/* MANIFESTO */
+.manifesto {
+  max-width: 620px;
+}
+
+.manifesto .line {
+  display: block;
+  font-weight: normal;
+  line-height: 1.55;
+  margin-bottom: 0.3em;
+  color: #1a1a1a;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.manifesto .l2,
+.manifesto .l3,
+.manifesto .l4 {
+  font-size: 17px;
+  color: #2a3a2e;
+}
+
+.manifesto .l4 {
+  margin-bottom: 1.4em;
+}
+
+.manifesto .l5,
+.manifesto .l6 {
+  font-size: 17px;
+  color: #2a3a2e;
+}
+
+.manifesto .l6 {
+  margin-bottom: 1.4em;
+}
+
+.manifesto .l7,
+.manifesto .l8 {
+  font-size: 17px;
+  color: #2a3a2e;
+}
+
+.manifesto .l8 {
+  margin-bottom: 0;
+}
+
+.manifesto .closing {
+  display: block;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 19px;
+  font-weight: normal;
+  color: #1B6527;
+  line-height: 1.45;
+  margin-top: 2em;
+}
+
+/* FOOTER */
+footer {
+  background: #1B6527;
+  color: #FDFDFD;
+  padding: 20px 96px;
+  font-size: 12px;
+  letter-spacing: 0.04em;
+}
+
+footer .row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 24px;
+  flex-wrap: wrap;
+}
+
+footer .left {
+  opacity: 0.95;
+}
+
+footer .right {
+  opacity: 0.7;
+}
+
+/* RESPONSIVE */
+@media (max-width: 1100px) {
+  .main { gap: 56px; }
+  .main .left .slogan { font-size: 38px; }
+  .manifesto .closing { font-size: 18px; }
+  header.site nav { gap: 28px; }
+  header.site nav a { font-size: 12px; letter-spacing: 0.15em; }
+}
+
+@media (max-width: 900px) {
+  header.site { padding: 28px 48px 0; }
+  header.site img.logo { height: 78px; }
+  header.site nav { gap: 20px; }
+  header.site nav a { font-size: 11px; letter-spacing: 0.12em; }
+  .main {
+    padding: 40px 48px;
+    grid-template-columns: 1fr;
+    gap: 56px;
+  }
+  .main .left .eyebrow { font-size: 11px; margin-bottom: 12px; }
+  .main .left .slogan { font-size: 36px; }
+  .manifesto { max-width: 100%; }
+  .manifesto .l2,
+  .manifesto .l3,
+  .manifesto .l4 { font-size: 15px; }
+  .manifesto .l5,
+  .manifesto .l6 { font-size: 15px; }
+  .manifesto .l7,
+  .manifesto .l8 { font-size: 15px; }
+  .manifesto .closing { font-size: 17px; }
+  footer { padding: 18px 48px; }
+}
+
+@media (max-width: 600px) {
+  header.site { padding: 20px 28px 0; }
+  header.site img.logo { height: 66px; }
+  header.site nav { display: none; }
+  .main { padding: 32px 28px; gap: 40px; }
+  .main .left .eyebrow { font-size: 10px; margin-bottom: 10px; }
+  .main .left .slogan { font-size: 28px; }
+  .main .left .slogan .snow { color: #1a1a1a; font-style: italic; }
+  .manifesto .l2,
+  .manifesto .l3,
+  .manifesto .l4 { font-size: 14px; }
+  .manifesto .l5,
+  .manifesto .l6 { font-size: 14px; }
+  .manifesto .l7,
+  .manifesto .l8 { font-size: 14px; }
+  .manifesto .closing { font-size: 15px; }
+  footer { padding: 16px 28px; font-size: 11px; }
+  footer .row { gap: 8px; }
+}
+</style>
+</head>
+<body>
+
+<header class="site">
+  <div class="top-row">
+    <img src="assets/img/gss-logo.png" alt="Green and Snow Studio" class="logo">
+    <nav>
+      <a href="#">About</a>
+      <a href="#">Our Works</a>
+      <a href="#">Contact</a>
+    </nav>
+  </div>
+  <div class="divider"></div>
+</header>
+
+<main class="wrapper">
+  <section class="main">
+    <div class="left">
+      <p class="eyebrow">Studio of ideas</p>
+      <h1 class="slogan">
+        <span class="line1">Where <span class="green">Green</span></span>
+        <span class="line2">Meets <span class="snow">Snow</span></span>
+      </h1>
+    </div>
+
+    <div class="manifesto">
+      <span class="line l2">Some of them become apps.</span>
+      <span class="line l3">Some become websites.</span>
+      <span class="line l4">Some are still being shaped.</span>
+
+      <span class="line l5">We've been building creative things for a long time.</span>
+      <span class="line l6">Now we build creative software.</span>
+
+      <span class="line l7">Quick, but never rushed.</span>
+      <span class="line l8">Imaginative, but never careless.</span>
+
+      <span class="closing">Where creativity meets reliability<br>with human intuition and artificial intelligence.</span>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="row">
+    <div class="left">© 2026 Green and Snow Studio LLC</div>
+    <div class="right">Site under construction</div>
+  </div>
+</footer>
+
+</body>
+</html>
