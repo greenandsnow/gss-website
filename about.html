@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>About — Green and Snow Studio</title>
+<meta name="description" content="Green and Snow Studio is an independent studio designing and building mobile apps and websites, with offices in the United States and Canada.">
+<link rel="icon" type="image/x-icon" href="/favicon.ico">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<style>
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+html { scroll-behavior: smooth; }
+
+body {
+  background-image: url('assets/img/gss-bg-pattern.jpg');
+  background-color: #FDFDFD;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  color: #1a1a1a;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  line-height: 1.5;
+  font-size: 15px;
+  -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+main.wrapper {
+  flex: 1;
+  display: flex;
+  align-items: flex-start;
+  width: 100%;
+}
+
+/* HEADER */
+header.site { padding: 32px 96px 0; }
+
+header.site .top-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 28px;
+}
+
+header.site img.logo { height: 90px; width: auto; display: block; }
+
+header.site nav { display: flex; gap: 40px; }
+
+header.site nav a {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 13px;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: #1a1a1a;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+header.site nav a:hover { color: #1B6527; }
+header.site nav a.active { color: #1B6527; }
+
+header.site .divider {
+  height: 1px;
+  background: rgba(27, 101, 39, 0.3);
+  max-width: 100%;
+}
+
+/* CONTENT — single column */
+.content { width: 100%; padding: 40px 96px; }
+.content .inner { max-width: 700px; margin: 0 auto; }
+
+.content h1.page-title {
+  font-family: Georgia, serif;
+  font-size: 44px;
+  font-weight: normal;
+  line-height: 1.05;
+  letter-spacing: -0.02em;
+  color: #1a1a1a;
+  text-align: center;
+  margin-bottom: 0.8em;
+}
+
+.content p {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 17px;
+  color: #2a3a2e;
+  line-height: 1.55;
+  margin-bottom: 1em;
+}
+
+.content p:last-child { margin-bottom: 0; }
+
+.content p.closing {
+  color: #1B6527;
+  font-size: 19px;
+  line-height: 1.45;
+  margin-top: 1.6em;
+}
+
+.content a { color: #1B6527; text-decoration: none; }
+.content a:hover { text-decoration: underline; }
+
+/* FOOTER */
+footer {
+  background: #1B6527;
+  color: #FDFDFD;
+  padding: 20px 96px;
+  font-size: 12px;
+  letter-spacing: 0.04em;
+}
+
+footer .row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 24px;
+  flex-wrap: wrap;
+}
+
+footer .left { opacity: 0.95; }
+
+footer .right a,
+footer .right span {
+  color: #FDFDFD;
+  text-decoration: none;
+  opacity: 0.7;
+  transition: opacity 0.2s ease;
+}
+
+footer .right a:hover { opacity: 1; }
+
+/* RESPONSIVE */
+@media (max-width: 1100px) {
+  header.site nav { gap: 28px; }
+  header.site nav a { font-size: 12px; letter-spacing: 0.15em; }
+  .content h1.page-title { font-size: 38px; }
+  .content p.closing { font-size: 18px; }
+}
+
+@media (max-width: 900px) {
+  header.site { padding: 28px 48px 0; }
+  header.site img.logo { height: 78px; }
+  header.site nav { gap: 20px; }
+  header.site nav a { font-size: 11px; letter-spacing: 0.12em; }
+  .content { padding: 40px 48px; }
+  .content h1.page-title { font-size: 36px; }
+  .content p { font-size: 15px; }
+  .content p.closing { font-size: 17px; }
+  footer { padding: 18px 48px; }
+}
+
+@media (max-width: 600px) {
+  header.site { padding: 20px 28px 0; }
+  header.site img.logo { height: 66px; }
+  header.site nav { display: none; }
+  .content { padding: 32px 28px; }
+  .content h1.page-title { font-size: 28px; }
+  .content p { font-size: 14px; }
+  .content p.closing { font-size: 15px; }
+  footer { padding: 16px 28px; font-size: 11px; }
+  footer .row { gap: 8px; }
+}
+</style>
+</head>
+<body>
+
+<header class="site">
+  <div class="top-row">
+    <img src="assets/img/gss-logo.png" alt="Green and Snow Studio" class="logo">
+    <nav>
+      <a href="/about" class="active">About</a>
+      <a href="/works">Our Works</a>
+      <a href="/contact">Contact</a>
+    </nav>
+  </div>
+  <div class="divider"></div>
+</header>
+
+<main class="wrapper">
+  <section class="content">
+    <div class="inner">
+      <h1 class="page-title">About</h1>
+      <p>Green and Snow Studio is a modern independent studio. We design and build mobile applications and websites — based on our own ideas and on those of our clients.</p>
+      <p>The studio's offices are located in the United States and Canada. We also collaborate with experienced independent developers on our projects.</p>
+      <p>In our work, we strike a balance between creative thinking and artificial intelligence.</p>
+      <p class="closing">Quick, but never rushed. Imaginative, but never careless.</p>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="row">
+    <div class="left">© 2026 Green and Snow Studio LLC</div>
+    <div class="right"><a href="/privacy">Privacy Policy</a></div>
+  </div>
+</footer>
+
+</body>
+</html>
