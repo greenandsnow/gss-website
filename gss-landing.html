@@ -5,6 +5,10 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Green and Snow Studio</title>
 <meta name="description" content="A studio of ideas. We build creative software — apps and websites — with human intuition and artificial intelligence.">
+<link rel="icon" type="image/x-icon" href="/favicon.ico">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
 <style>
 * { box-sizing: border-box; margin: 0; padding: 0; }
 
@@ -200,9 +204,15 @@ footer .left {
   opacity: 0.95;
 }
 
-footer .right {
+footer .right a,
+footer .right span {
+  color: #FDFDFD;
+  text-decoration: none;
   opacity: 0.7;
+  transition: opacity 0.2s ease;
 }
+
+footer .right a:hover { opacity: 1; }
 
 /* RESPONSIVE */
 @media (max-width: 1100px) {
@@ -264,9 +274,9 @@ footer .right {
   <div class="top-row">
     <img src="assets/img/gss-logo.png" alt="Green and Snow Studio" class="logo">
     <nav>
-      <a href="#">About</a>
-      <a href="#">Our Works</a>
-      <a href="#">Contact</a>
+      <a href="/about">About</a>
+      <a href="/works">Our Works</a>
+      <a href="/contact">Contact</a>
     </nav>
   </div>
   <div class="divider"></div>
@@ -301,7 +311,7 @@ footer .right {
 <footer>
   <div class="row">
     <div class="left">© 2026 Green and Snow Studio LLC</div>
-    <div class="right">Site under construction</div>
+    <div class="right"><a href="/privacy">Privacy Policy</a></div>
   </div>
 </footer>
 

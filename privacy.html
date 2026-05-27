@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Privacy Policy — Green and Snow Studio</title>
+<meta name="description" content="How Green and Snow Studio handles your data — what we collect, how we use it, and the rights you have over your information. Plain English, no surprises.">
+<link rel="icon" type="image/x-icon" href="/favicon.ico">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<style>
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+html { scroll-behavior: smooth; }
+
+body {
+  background-image: url('assets/img/gss-bg-pattern.jpg');
+  background-color: #FDFDFD;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  color: #1a1a1a;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  line-height: 1.5;
+  font-size: 15px;
+  -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+main.wrapper {
+  flex: 1;
+  display: flex;
+  align-items: flex-start;
+  width: 100%;
+}
+
+/* HEADER */
+header.site { padding: 32px 96px 0; }
+
+header.site .top-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 28px;
+}
+
+header.site img.logo { height: 90px; width: auto; display: block; }
+
+header.site nav { display: flex; gap: 40px; }
+
+header.site nav a {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 13px;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: #1a1a1a;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+header.site nav a:hover { color: #1B6527; }
+header.site nav a.active { color: #1B6527; }
+
+header.site .divider {
+  height: 1px;
+  background: rgba(27, 101, 39, 0.3);
+  max-width: 100%;
+}
+
+/* CONTENT — single column */
+.content { width: 100%; padding: 40px 96px; }
+.content .inner { max-width: 700px; margin: 0 auto; }
+
+.content h1.page-title {
+  font-family: Georgia, serif;
+  font-size: 44px;
+  font-weight: normal;
+  line-height: 1.05;
+  letter-spacing: -0.02em;
+  color: #1a1a1a;
+  text-align: center;
+  margin-bottom: 0.4em;
+}
+
+.content .updated {
+  text-align: center;
+  font-size: 13px;
+  color: #8A99A3;
+  letter-spacing: 0.04em;
+  margin-bottom: 2.2em;
+}
+
+.content h2 {
+  font-family: Georgia, serif;
+  font-size: 24px;
+  font-weight: normal;
+  color: #1B6527;
+  margin: 1.8em 0 0.5em;
+}
+
+.content h3 {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 13px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #1a1a1a;
+  margin: 1.2em 0 0.4em;
+}
+
+.content p {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 17px;
+  color: #2a3a2e;
+  line-height: 1.55;
+  margin-bottom: 1em;
+}
+
+.content ul { margin: 0 0 1em 1.3em; }
+
+.content li {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 17px;
+  color: #2a3a2e;
+  line-height: 1.55;
+  margin-bottom: 0.5em;
+}
+
+.content a { color: #1B6527; text-decoration: none; }
+.content a:hover { text-decoration: underline; }
+
+/* FOOTER */
+footer {
+  background: #1B6527;
+  color: #FDFDFD;
+  padding: 20px 96px;
+  font-size: 12px;
+  letter-spacing: 0.04em;
+}
+
+footer .row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 24px;
+  flex-wrap: wrap;
+}
+
+footer .left { opacity: 0.95; }
+
+footer .right a,
+footer .right span {
+  color: #FDFDFD;
+  text-decoration: none;
+  opacity: 0.7;
+  transition: opacity 0.2s ease;
+}
+
+footer .right a:hover { opacity: 1; }
+
+/* RESPONSIVE */
+@media (max-width: 1100px) {
+  header.site nav { gap: 28px; }
+  header.site nav a { font-size: 12px; letter-spacing: 0.15em; }
+  .content h1.page-title { font-size: 38px; }
+  .content h2 { font-size: 22px; }
+}
+
+@media (max-width: 900px) {
+  header.site { padding: 28px 48px 0; }
+  header.site img.logo { height: 78px; }
+  header.site nav { gap: 20px; }
+  header.site nav a { font-size: 11px; letter-spacing: 0.12em; }
+  .content { padding: 40px 48px; }
+  .content h1.page-title { font-size: 36px; }
+  .content h2 { font-size: 21px; }
+  .content p, .content li { font-size: 15px; }
+  footer { padding: 18px 48px; }
+}
+
+@media (max-width: 600px) {
+  header.site { padding: 20px 28px 0; }
+  header.site img.logo { height: 66px; }
+  header.site nav { display: none; }
+  .content { padding: 32px 28px; }
+  .content h1.page-title { font-size: 28px; }
+  .content h2 { font-size: 19px; }
+  .content p, .content li { font-size: 14px; }
+  footer { padding: 16px 28px; font-size: 11px; }
+  footer .row { gap: 8px; }
+}
+</style>
+</head>
+<body>
+
+<header class="site">
+  <div class="top-row">
+    <img src="assets/img/gss-logo.png" alt="Green and Snow Studio" class="logo">
+    <nav>
+      <a href="/about">About</a>
+      <a href="/works">Our Works</a>
+      <a href="/contact">Contact</a>
+    </nav>
+  </div>
+  <div class="divider"></div>
+</header>
+
+<main class="wrapper">
+  <section class="content">
+    <div class="inner">
+      <h1 class="page-title">Privacy Policy</h1>
+      <p class="updated">Last updated: 27 May 2026</p>
+
+      <p>Plain English, no surprises. This policy explains what information we collect when you use Green and Snow Studio services or visit our website, how we use it, and the rights you have over your data.</p>
+
+      <h2>Information we collect</h2>
+      <p>We collect only what we need to provide our service and run our business. Specifically:</p>
+      <h3>From you, directly</h3>
+      <ul>
+        <li>Contact details: name, email, phone number, company or brand name, when you submit a form or email us.</li>
+        <li>Project information: details about the apps, websites, or ideas you discuss with us, when you inquire about our services or begin a project.</li>
+        <li>Payment information: billing address and payment method details, processed by our payment processor. We do not store full credit card numbers.</li>
+      </ul>
+      <h3>Automatically, from your device</h3>
+      <ul>
+        <li>Technical data: IP address, browser type, device type, operating system.</li>
+        <li>Usage data: pages you visit, time spent, referring website, basic analytics signals.</li>
+      </ul>
+
+      <h2>How we use it</h2>
+      <p>We use the information we collect for these purposes:</p>
+      <ul>
+        <li>To provide our service. Respond to your inquiries, design and build your software, deliver projects, send invoices.</li>
+        <li>To communicate with you. Reply to questions, share project updates, notify you of issues or changes.</li>
+        <li>To improve our operations. Understand how the website is used, identify what works and what doesn't, fix problems.</li>
+        <li>To comply with law. Tax filings, fraud prevention, responding to legal requests.</li>
+      </ul>
+      <p>We do not sell your data. We do not use your information for advertising. We do not share your details with competitors or third parties for marketing purposes.</p>
+
+      <h2>How we share it</h2>
+      <p>We share your information only with parties who help us run our service:</p>
+      <ul>
+        <li>Cloud and software vendors — email hosting, code hosting, deployment platforms, accounting and communication tools used to run our business.</li>
+        <li>Payment processors — to bill you and process payments.</li>
+        <li>Legal authorities — when required by law, court order, or to protect against fraud.</li>
+      </ul>
+      <p>If we ever sell or transfer the business, your information may be part of that transfer — but only under the same protections described here.</p>
+
+      <h2>Cookies and tracking</h2>
+      <p>Our website uses cookies for two purposes: essential functionality (so the site and forms work) and basic analytics (to understand how the site is used).</p>
+      <p>We don't use advertising cookies, third-party trackers for marketing, or behavior-based remarketing pixels.</p>
+      <p>You can disable cookies in your browser settings — the site will still work, but some features may not.</p>
+
+      <h2>Data retention</h2>
+      <p>We keep your information only as long as we need it:</p>
+      <ul>
+        <li>Active clients: for the duration of our service relationship plus 7 years after, for tax and legal purposes.</li>
+        <li>Inquiries that don't become clients: 12 months from your last contact, then deleted.</li>
+        <li>Website analytics: aggregated and anonymized after 14 months.</li>
+      </ul>
+      <p>If you want your data deleted earlier, contact us — we'll do it within 30 days, except where law requires us to retain it.</p>
+
+      <h2>Your rights</h2>
+      <p>Depending on where you're located, you may have rights under privacy laws (GDPR if in the EU, CCPA/CPRA if in California, PIPEDA if in Canada, and similar laws elsewhere). These include:</p>
+      <ul>
+        <li>Access: a copy of the information we hold about you.</li>
+        <li>Correction: ask us to fix inaccurate data.</li>
+        <li>Deletion: ask us to delete your data (with exceptions for legal records).</li>
+        <li>Portability: a machine-readable copy of your data.</li>
+        <li>Objection: opt out of certain types of processing.</li>
+        <li>Withdraw consent: for any processing based on consent.</li>
+      </ul>
+      <p>To exercise any of these, email <a href="mailto:info@greenandsnowstudio.com">info@greenandsnowstudio.com</a>. We respond within 30 days.</p>
+
+      <h2>Children's privacy</h2>
+      <p>Our service is for businesses, not for individuals under 18. We don't knowingly collect data from children. If we learn we've done so accidentally, we delete it promptly.</p>
+
+      <h2>Security</h2>
+      <p>We use standard industry practices to protect your data: encrypted connections (HTTPS), access controls on who can see what, encrypted password storage, and limited data sharing with vendors who maintain their own safeguards.</p>
+      <p>No system is perfectly secure. If we ever detect a breach affecting your data, we'll notify you within 72 hours and tell you what happened and what we're doing about it.</p>
+
+      <h2>International transfers</h2>
+      <p>Green and Snow Studio operates from the United States and Canada. Some of our team members and service providers work from other countries. Your data may be stored or processed outside your country.</p>
+      <p>Where applicable, we rely on standard contractual clauses and equivalent protections to ensure your data stays protected wherever it's processed.</p>
+
+      <h2>Changes to this policy</h2>
+      <p>We may update this policy as our service evolves or as laws change. We'll post the updated version here with a new effective date.</p>
+      <p>For significant changes (new categories of data collected, new ways we use data), we'll notify active clients by email at least 30 days before the change takes effect.</p>
+
+      <h2>Contact us</h2>
+      <p>Questions about this privacy policy, or want to exercise any of your rights? Email us:</p>
+      <p><a href="mailto:info@greenandsnowstudio.com">info@greenandsnowstudio.com</a><br>Subject line: Privacy. We respond within 24 hours.</p>
+      <p>Green and Snow Studio LLC<br>16192 Coastal Highway, Lewes, DE 19958, USA</p>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="row">
+    <div class="left">© 2026 Green and Snow Studio LLC</div>
+    <div class="right"><span>Privacy Policy</span></div>
+  </div>
+</footer>
+
+</body>
+</html>
